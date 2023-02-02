@@ -19,11 +19,8 @@ const tiers = [
     {
         title: 'About web page',
         description: [
-          'INSTITUTE OF TECHNOLOGY,',
-          'University of Moratuwa,',
-          'Diyagama,',
-          'Homagama,',
-          'Sri Lanka.'
+          'This web page mainly desinged for PHIs. They can got the details of corona positive patients details and their close contacts.',
+          
         ],
         
       },
@@ -32,11 +29,7 @@ const tiers = [
         title: 'Register for free',
         fontColor:red,
         description: [
-          'INSTITUTE OF TECHNOLOGY,',
-          'University of Moratuwa,',
-          'Diyagama,',
-          'Homagama,',
-          'Sri Lanka.'
+          'Everyone can use this web application. It is a free web application.'
         ],
         
       },
@@ -44,31 +37,27 @@ const tiers = [
       {
         title: 'Identify your identity',
         description: [
-          'INSTITUTE OF TECHNOLOGY,',
-          'University of Moratuwa,',
-          'Diyagama,',
-          'Homagama,',
-          'Sri Lanka.'
+          'The mobile application must use your authentic information so that your identity can be identified',
+          
         ],
         
       },
   {
-    title: 'Covid-19',
+    title: 'Treating COVID-19',
     description: [
-      'INSTITUTE OF TECHNOLOGY,',
-      'University of Moratuwa,',
-      'Diyagama,',
-      'Homagama,',
-      'Sri Lanka.'
+      'If you test positive and are more likely to get very sick from COVID-19, external icon that can reduce your chances of being hospitalized or dying from the disease.',
+      
     ],
     
   },
   {
     title: 'Symptoms',
     description: [
-      'TEL: 011-212-4000',
-      'FAX: 011-211-7040',
-      'EMAIL: info@itum.mrt.ac.lk',
+      'Fever or chills,',
+      'Cough,',
+      'Muscle or body aches,',
+      'Headache,',
+      'Congestion or runny nose'
       
     ],
     
@@ -76,11 +65,8 @@ const tiers = [
   {
     title: 'Treatments',
     description: [
-      'INSTITUTE OF TECHNOLOGY,',
-      'University of Moratuwa,',
-      'Diyagama,',
-      'Homagama,',
-      'Sri Lanka.'
+      'Some treatments might have side effects or interact with other medications you are taking. Ask a healthcare provider if medications to treat COVID-19 are right for you.',
+      
     ],
     
   },
@@ -110,7 +96,7 @@ function ServicesContent() {
         >
           SERVICES
         </Typography>
-        <Typography variant="h5" align="center" color="text.primary" component="p">
+        <Typography variant="h5" align="center" fontFamily="Segoe UI" color='#9500ae' component="p">
         We are here to clear your doubts about our webpage and ease the use of our webpage.
         </Typography>
       </Container>
@@ -130,7 +116,7 @@ function ServicesContent() {
                 <CardHeader
                   title={tier.title}
                   subheader={tier.subheader}
-                  titleTypographyProps={{ align: 'center' }}
+                  titleTypographyProps={{ align: 'center' , color:'#e1bee7' }}
                   action={tier.title === 'Pro' ? <StarIcon /> : null}
                   subheaderTypographyProps={{
                     align: 'center',
@@ -138,8 +124,8 @@ function ServicesContent() {
                   sx={{
                     backgroundColor: (theme) =>
                       theme.palette.mode === 'light'
-                        ? theme.palette.grey[300]
-                        : theme.palette.grey[300],
+                        ? theme.palette.grey[600]
+                        : theme.palette.grey[200],
                   }}
                 />
                 <CardContent>
@@ -158,8 +144,9 @@ function ServicesContent() {
                       <Typography
                         component="li"
                         variant="subtitle1"
-                        align="center"
+                        align="left"
                         key={line}
+                        color='#4a148c'
                       >
                         {line}
                       </Typography>

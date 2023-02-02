@@ -17,34 +17,35 @@ export const mainListItems = (
         <DashboardIcon />
       </ListItemIcon>
       {/* <ListItemText primary="Dashboard" /> */}
-      <Link href="/" style={{textDecoration:'none'}}>Dashboard</Link>
+      <Link href="/" style={{textDecoration:'none', color:'#12005e',backgroundColor:'#e1bee7'}}>Dashboard</Link>
     </ListItemButton>
     <ListItemButton>
       <ListItemIcon>
         <DvrIcon />
       </ListItemIcon>
       {/*<ListItemText primary="About Us" />*/}
-      <Link href="/about" style={{textDecoration:'none'}}>About Us</Link>
+      <Link href="/about" style={{textDecoration:'none', color:'#12005e',backgroundColor:'#e1bee7'}}>About Us</Link>
     </ListItemButton>
     <ListItemButton>
       <ListItemIcon>
         <MedicalServicesIcon />
       </ListItemIcon>
       {/* <ListItemText primary="Services" /> */}
-      <Link href="/services" style={{textDecoration:'none'}}>Services</Link>
+      <Link href="/services" style={{textDecoration:'none',color:'#12005e',backgroundColor:'#e1bee7'}}>Services</Link>
     </ListItemButton>
     <ListItemButton>
       <ListItemIcon>
         <ContactPhoneIcon />
       </ListItemIcon>
       {/* <ListItemText primary="Contact" /> */}
-      <Link href="/contact" style={{textDecoration:'none'}}>Contact</Link>
+      <Link href="/contact" style={{textDecoration:'none', color:'#12005e',backgroundColor:'#e1bee7'}}>Contact</Link>
     </ListItemButton>
     <ListItemButton>
       <ListItemIcon>
         <LoginIcon />
       </ListItemIcon>
-      <ListItemText primary="LogIn" />
+      <Link href="/login" style={{textDecoration:'none', color:'#12005e',backgroundColor:'#e1bee7'}}>Login</Link>
+      {/* <ListItemText primary="LogIn" /> */}
     </ListItemButton>
   </React.Fragment>
 );

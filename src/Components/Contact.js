@@ -12,10 +12,11 @@ import StarIcon from '@mui/icons-material/StarBorder';
 import Typography from '@mui/material/Typography';
 import GlobalStyles from '@mui/material/GlobalStyles';
 import Container from '@mui/material/Container';
+import { blue } from '@mui/material/colors';
 
 
 const tiers = [
-  {
+  { 
     title: 'Address',
     description: [
       'INSTITUTE OF TECHNOLOGY,',
@@ -62,7 +63,7 @@ function ContactContent() {
         >
           CONTACT
         </Typography>
-        <Typography variant="h5" align="center" color="text.primary" component="p">
+        <Typography variant="h5" fontFamily="Segoe UI" align="center" color='#9500ae' component="p">
         Email us with any inquiries or call 011-212-4000.We would be happy to answer your questions and set up a 
         meeting with you.
         </Typography>
@@ -77,22 +78,23 @@ function ContactContent() {
               key={tier.title}
               xs={12}
               md={6}
+          
             
             >
               <Card>
                 <CardHeader
                   title={tier.title}
                   subheader={tier.subheader}
-                  titleTypographyProps={{ align: 'center' }}
+                  titleTypographyProps={{ align: 'center', color:'#e1bee7' }}
                   action={tier.title === 'Pro' ? <StarIcon /> : null}
                   subheaderTypographyProps={{
-                    align: 'center',
+                    align: 'center'
                   }}
                   sx={{
                     backgroundColor: (theme) =>
                       theme.palette.mode === 'light'
-                        ? theme.palette.grey[300]
-                        : theme.palette.grey[300],
+                        ? theme.palette.grey[600]
+                        : theme.palette.grey[200],
                   }}
                 />
                 <CardContent>
@@ -113,6 +115,7 @@ function ContactContent() {
                         variant="subtitle1"
                         align="center"
                         key={line}
+                        color='#4a148c'
                       >
                         {line}
                       </Typography>

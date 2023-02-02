@@ -7,7 +7,7 @@ import Container from '@mui/material/Container';
 
 function AboutContent() {
     return (
-        <Container disableGutters maxWidth="sm" component="main" sx={{ pt: 8, pb: 6 }}>
+        <Container disableGutters maxWidth="sm" component="main" sx={{ pt: 10, pb: 6 }}>
         <Typography
           component="h1"
           variant="h3"
@@ -17,7 +17,7 @@ function AboutContent() {
         >
           ABOUT US
         </Typography>
-        <Typography variant="h5" align="center" color="text.primary" component="p">
+        <Typography variant="h5" fontFamily="Segoe UI" align="left" color='#9500ae' component="p">
           We are second year Undergraduate Information Technology students of Institute of Technology University of Moratuwa (NDT). It is our final year group project.<br/>
           When we see the world nowadays there is a tragedy in the whole world. In the near past of the world this is the most dangerous situation for all human beings. This is no one 
           else. This is Covid-19.When project ideas were considered by us, we got a point from this pandemic situation. We were searched about “How normal people have being affected from Covid-19 situation nowadays?”, "What can be given to them as solutions using technologies which we can be handle and which are known by us?”, "What are the problems people are facing with the pandemic situation?”, "What kind of solutions can be 
